@@ -4,3 +4,8 @@ variable "resource_namespace" {
   default     = "resource"
 }
 
+variable "app_namespace" {
+  description = "Namespace to deploy app"
+  type        = string
+  default     = "app"
+}
