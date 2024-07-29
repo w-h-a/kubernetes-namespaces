@@ -17,3 +17,23 @@ resource "kubernetes_namespace" "app" {
 output "app_namespace" {
   value = kubernetes_namespace.app
 }
+
+resource "kubernetes_namespace" "content" {
+  metadata {
+    name = var.content_namespace
+  }
+}
+
+output "content_namespace" {
+  value = kubernetes_namespace.content
+}
+
+resource "kubernetes_namespace" "misc" {
+  metadata {
+    name = var.misc_namespace
+  }
+}
+
+output "misc_namespace" {
+  value = kubernetes_namespace.misc
+}
