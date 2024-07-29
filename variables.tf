@@ -9,3 +9,15 @@ variable "app_namespace" {
   type        = string
   default     = "app"
 }
+
+variable "content_namespace" {
+  description = "Namespace to deploy content"
+  type        = string
+  default     = "content"
+}
+
+variable "misc_namespace" {
+  description = "Namespace to deploy misc"
+  type        = string
+  default     = "misc"
+}
